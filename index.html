@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f2f5fa; color: #222; }
+        header { background: #253b80; color: white; padding: 25px; text-align: center; }
+        main { padding: 25px; display: flex; flex-wrap: wrap; gap: 20px; }
+        section { background: white; padding: 20px; border-radius: 10px; flex: 1; min-width: 240px; }
+        button { background: #253b80; color: white; border: 0; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Event Management Portal</h1>
+        <p>Discover events, workshops and hackathons</p>
+    </header>
+    <main>
+        <section>
+            <h2>Tech Symposium</h2>
+            <p>Date: 25 October 2026</p>
+            <p>Venue: Main Auditorium</p>
+            <button onclick="register('Tech Symposium')">Register</button>
+        </section>
+        <section>
+            <h2>AI Hackathon</h2>
+            <p>Date: 28 October 2026</p>
+            <p>Venue: Innovation Lab</p>
+            <button onclick="register('AI Hackathon')">Register</button>
+        </section>
+        <section>
+            <h2>Cultural Fest</h2>
+            <p>Date: 2 November 2026</p>
+            <p>Venue: Open Air Theatre</p>
+            <button onclick="register('Cultural Fest')">Register</button>
+        </section>
+    </main>
+    <script>
+        function register(eventName) {
+            alert("Registration request received for " + eventName);
+        }
+    </script>
+</body>
+</html>

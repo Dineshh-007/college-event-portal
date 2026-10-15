@@ -1,23 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Event Portal</title>
+    <title>College Event Management Portal</title>
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f2f5fa; color: #222; }
-        header { background: #253b80; color: white; padding: 25px; text-align: center; }
-        main { padding: 25px; display: flex; flex-wrap: wrap; gap: 20px; }
-        section { background: white; padding: 20px; border-radius: 10px; flex: 1; min-width: 240px; }
-        button { background: #253b80; color: white; border: 0; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f5fa;
+            color: #222;
+        }
+
+        header {
+            background: #253b80;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        main {
+            padding: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 260px;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        button {
+            background: #253b80;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #172653;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>College Event Management Portal</h1>
         <p>Discover events, workshops and hackathons</p>
     </header>
+
     <main>
         <section>
             <h2>Tech Symposium</h2>
@@ -25,12 +69,14 @@
             <p>Venue: Main Auditorium</p>
             <button onclick="register('Tech Symposium')">Register</button>
         </section>
+
         <section>
             <h2>AI Hackathon</h2>
             <p>Date: 28 October 2026</p>
             <p>Venue: Innovation Lab</p>
             <button onclick="register('AI Hackathon')">Register</button>
         </section>
+
         <section>
             <h2>Cultural Fest</h2>
             <p>Date: 2 November 2026</p>
@@ -38,6 +84,11 @@
             <button onclick="register('Cultural Fest')">Register</button>
         </section>
     </main>
+
+    <footer>
+        <p>College Event Management Portal | 2026</p>
+    </footer>
+
     <script>
         function register(eventName) {
             alert("Registration request received for " + eventName);
